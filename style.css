@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2890e6, #e5fa26);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 768px;
+  max-width: 100%;
+  background: linear-gradient(-45deg, #9551ee, #f1e534);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px 80px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.container:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  width: 700px;
+}
+
+.testimonial {
+  text-align: justify;
+  line-height: 28px;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.info img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.username {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.testimonial,
+.work {
+  font-size: 18px;
+}
+
+.progress_bar {
+  background-color: #fff;
+  height: 4px;
+  width: 95%;
+  margin: auto;
+  transform-origin: left;
+  animation: progress_bar 10s linear infinite;
+}
